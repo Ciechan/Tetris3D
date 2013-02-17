@@ -3,12 +3,13 @@ Tetris3D
 
 Tetris3D as a school project.
 
-User Manual:
+Controls:
+---------
 
-ARROW KEYS - move block
-A - rotate block along X axis
-S - rotate block along Y axis
-D - rotate block along Z axis
-SPACE - drop block
+* ARROW KEYS - move block
+* A - rotate block along X axis
+* S - rotate block along Y axis
+* D - rotate block along Z axis
+* SPACE - drop block
 
-MOUSE DRAG - move camera around
+* MOUSE DRAG - move camera around
