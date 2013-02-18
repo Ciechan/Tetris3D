@@ -4,6 +4,7 @@ import tetris.Color;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.nio.ByteBuffer;
 import java.nio.FloatBuffer;
 
@@ -279,10 +280,11 @@ public class GLRenderer {
 	
 	private void setupShaders() {		
 		// Load the vertex shader
-		quadVertexShader = this.loadShader("src/tetris/Shaders/vertexShader.glsl", 
+
+		quadVertexShader = this.loadShader("vertexShader.glsl", 
 				GL20.GL_VERTEX_SHADER);
 		// Load the fragment shader
-		quadFragmentShader = this.loadShader("src/tetris/Shaders/fragmentShader.glsl", 
+		quadFragmentShader = this.loadShader("fragmentShader.glsl", 
 				GL20.GL_FRAGMENT_SHADER);
 		
 		// Create a new shader program that links both shaders
@@ -398,7 +400,7 @@ public class GLRenderer {
 		int shaderID = 0;
 		
 		try {
-			BufferedReader reader = new BufferedReader(new FileReader(filename));
+			BufferedReader reader = new BufferedReader(new InputStreamReader(this.getClass().getResourceAsStream(filename)));
 			String line;
 			while ((line = reader.readLine()) != null) {
 				shaderSource.append(line).append("\n");
