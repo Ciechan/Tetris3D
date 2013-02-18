@@ -3,7 +3,7 @@ Tetris3D
 
 Tetris3D as a school project.
 
-[![](https://raw.github.com/Ciechan/Tetris3D/blob/master/screenshot.png)](https://raw.github.com/Ciechan/Tetris3D/blob/master/screenshot.png)
+[![](https://raw.github.com/Ciechan/Tetris3D/master/screenshot.png)](https://raw.github.com/Ciechan/Tetris3D/master/screenshot.png)
 
 Controls:
 ---------
